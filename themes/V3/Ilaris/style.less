@@ -212,7 +212,12 @@ body {
 	}
 
 	img {
-		z-index: -1;
+		z-index: -1;    
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		mix-blend-mode: multiply;
 	}
 
 	strong {
@@ -1522,6 +1527,18 @@ body {
 
 		img {
 			height: 3cm;
+			width: auto;
+		}
+	}
+
+	.vollbild {
+		img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			mix-blend-mode: unset;
 		}
 	}
 }
