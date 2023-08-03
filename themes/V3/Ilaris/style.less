@@ -554,43 +554,27 @@ body {
 		}
 
 	}
-	.symbol.dereweit {
-		.fa-symbol();
-		&::before{
-			content: "\f0ac";
-		}
-	}
-	.symbol.person {
-		.fa-symbol();
-		&::before{
-			content: "\f183";
-		}
-	}
-	.symbol.tier {
-		.fa-symbol();
-		&::before{
-			content: "\f1b0";
-		}
-	}
-	// person=\f183
-	// dereweit=\f0ac
-	// aventurienweit=\f0ac
-	// elixier=\f0c3
-	// bisbindunggeloest=\f127
-	// tier=\f1b0
-	// lebensjahr=\f1fd
-	// initiativephasen=\f2f9
-	// beruehrung=\f256
-	// gebundenerkristall=\f3a5
-	// teilobjekt=\f466
-	// einzelobjekt=\f468
-	// pflanze=\f4d8
-	// hexenbesen=\f51a
-	// permanent=\f534
-	// biszu =\f537
-	// vertrautentier=\f6be
-	// zauber=\f72b
-	// waehlbar=\f83e
+
+	.symbol.person {.fa-symbol(); &::before{ content: "\f183";}}
+	.symbol.dereweit {.fa-symbol(); &::before{ content: "\f0ac";}}
+	.symbol.aventurienweit {.fa-symbol(); &::before{ content: "\f0ac";}}
+	.symbol.elixier {.fa-symbol(); &::before{ content: "\f0c3";}}
+	.symbol.bisbindunggeloest {.fa-symbol(); &::before{ content: "\f127";}}
+	.symbol.tier {.fa-symbol(); &::before{ content: "\f1b0";}}
+	.symbol.lebensjahr {.fa-symbol(); &::before{ content: "\f1fd";}}
+	.symbol.initiativephasen {.fa-symbol(); &::before{ content: "\f2f9";}}
+	.symbol.beruehrung {.fa-symbol(); &::before{ content: "\f256";}}
+	.symbol.gebundenerkristall {.fa-symbol(); &::before{ content: "\f3a5";}}
+	.symbol.teilobjekt {.fa-symbol(); &::before{ content: "\f466";}}
+	.symbol.einzelobjekt {.fa-symbol(); &::before{ content: "\f468";}}
+	.symbol.pflanze {.fa-symbol(); &::before{ content: "\f4d8";}}
+	.symbol.hexenbesen {.fa-symbol(); &::before{ content: "\f51a";}}
+	.symbol.permanent {.fa-symbol(); &::before{ content: "\f534";}}
+	.symbol.biszu {.fa-symbol(); &::before{ content: "\f537";}}
+	.symbol.vertrautentier {.fa-symbol(); &::before{ content: "\f6be";}}
+	.symbol.zauber {.fa-symbol(); &::before{ content: "\f72b";}}
+	.symbol.waehlbar, .symbol.variabel{.fa-symbol(); &::before{ content: "\f83e";}}
+	
 	.card,
 	.karte {
 		width: 2.5in;
@@ -646,10 +630,25 @@ body {
 			}
 		}
 
+		&.sehrkleinertitel,
+		&.verysmalltitle {
+			h4,
+			h5 {
+				font-size: 0.3cm;
+			}
+		}
+
 		&.kleinertext,
 		&.smalltext {
 			p {
 				font-size: 0.29cm;
+			}
+		}
+
+		&.sehrkleinertext,
+		&.verysmalltext {
+			p {
+				font-size: 0.22cm;
 			}
 		}
 	}
@@ -1496,31 +1495,31 @@ body {
 		}
 
 		// copy from manoever plugin
-        .statcontent
-        {
-            font-size: 7pt;
-            display: inline-flex;
-            flex-direction: row;
-            height: 1.0em;
-            vertical-align: middle;
-        }
+        // .statcontent
+        // {
+        //     font-size: 7pt;
+        //     display: inline-flex;
+        //     flex-direction: row;
+        //     height: 1.0em;
+        //     vertical-align: middle;
+        // }
         
-        .statcontent img
-        {
-            height: 1.1em;
-            width: auto;
-            display: inline;
-            margin: 0;
-            position: relative;
-            top: -0.05em;
-        }
+        // .statcontent img
+        // {
+        //     height: 1.1em;
+        //     width: auto;
+        //     display: inline;
+        //     margin: 0;
+        //     position: relative;
+        //     top: -0.05em;
+        // }
         
-        .statcontent span
-        {
-            font-family: FontAwesome;
-            font-weight: 900;
-            -webkit-text-stroke: 0.5px #DED5BFdd; /* improve icon readbility */
-        }
+        // .statcontent span
+        // {
+        //     font-family: FontAwesome;
+        //     font-weight: 900;
+        //     -webkit-text-stroke: 0.5px #DED5BFdd; /* improve icon readbility */
+        // }
 
 
 
@@ -1561,6 +1560,7 @@ body {
 			height: 20px;
 
 			&.feuer{background-image: url(/assets/ilaris/fertigkeiten_magie/feuer.png);}
+			&.eis{background-image: url(/assets/ilaris/fertigkeiten_magie/eis.png);}
 			&.antimagie{background-image: url(/assets/ilaris/fertigkeiten_magie/antimagie.png);}
 			&.daemonisch{background-image: url(/assets/ilaris/fertigkeiten_magie/daemonisch.png);}
 			&.eigenschaften{background-image: url(/assets/ilaris/fertigkeiten_magie/eigenschaften.png);}
@@ -1579,8 +1579,8 @@ body {
 
 			&.zwoelf{background-image: url(/assets/ilaris/fertigkeiten_karma/zwoelf.png);}
 			&.ehre{background-image: url(/assets/ilaris/fertigkeiten_karma/ehre.png);}
-			&.erz{background-image: url(/assets/ilaris/fertigkeiten_karma/erz.png);}
-			&.feuer{background-image: url(/assets/ilaris/fertigkeiten_karma/feuer.png);}
+			&.kerz{background-image: url(/assets/ilaris/fertigkeiten_karma/erz.png);}
+			&.kfeuer{background-image: url(/assets/ilaris/fertigkeiten_karma/feuer.png);}
 			&.friede{background-image: url(/assets/ilaris/fertigkeiten_karma/friede.png);}
 			&.froehlicherwanderer{background-image: url(/assets/ilaris/fertigkeiten_karma/froehlicher_wanderer.png);}
 			&.guterkampf{background-image: url(/assets/ilaris/fertigkeiten_karma/guter_kampf.png);}
@@ -1681,6 +1681,15 @@ body {
 		.tradition.ztz {
 			background-image: url(/assets/ilaris/traditionen/ztz.png);
 		}
+	
+		dl+* {
+			margin-top: 0.17cm;
+		}
+	
+		p+dl {
+			margin-top: 0.17cm;
+		}
+	
 	}
 }
 
@@ -2251,7 +2260,7 @@ body {
 // *****************************/
 .page {
 	dl {
-		line-height: 1.25em;
+		// line-height: 1.25em;
 		padding-left: 1em;
 		white-space: pre-line;
 
