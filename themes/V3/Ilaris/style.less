@@ -1257,6 +1257,148 @@ body {
 	}
 
 	.karte {
+		.symbole {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			// transform: translate(-50%, 0);  // expand in both directions
+			width: fit-content;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			
+			padding-left: 2px;
+			padding-right: 2px;
+
+			background: #DED5BFdd;
+			border-bottom-right-radius: 2px;
+			border-left: 1px solid #000000aa;
+			border-right: 1px solid #000000aa;
+			border-bottom: 1px solid #000000aa;
+			box-shadow: 0 0.2em 0.3em rgba(0,0,0,0.4);
+
+            // display: table;
+            // text-align: right;
+			.p {
+				display: inline;
+			}
+		}
+
+		.statsymbol {
+			margin-left: 5px;
+			padding-top: 1px;
+			
+			&:first{
+				padding-left: 0px;
+			}
+
+			&::before{
+				text-align: center;
+				display: inline-block;
+				background: radial-gradient(circle at center, #654510 0%,#654510 60%,rgba(0, 0, 0, 0) 65%,rgba(80, 80, 80, 0) 100%);
+				line-height: 1.6;
+				height: 15px;
+				font-family: "Font Awesome 5 Free";
+				width: 15px;
+				font-size: 7pt;
+				margin-right: 3px;
+				font-weight: 900;
+				font-style: normal;
+				font-variant: normal;
+				color: #DED5BF;
+				-webkit-text-stroke: 0.5px #654510;
+			}
+		}
+
+		.reichweite {
+			.statsymbol();
+			&::before {
+				content: "\f545";
+			}
+		}
+
+		.ziel {
+			.statsymbol();
+			&::before {
+				content: "\f140";
+			}
+		}
+
+		.vorbereitung,
+		.vorbeireitungszeit {
+			.statsymbol();
+			&::before {
+				content: "\f254";
+			}
+		}
+        
+		.wirkung,
+		.wirkungsdauer {
+			.statsymbol();
+			&::before {
+				content: "\f2f2";
+			}
+		}
+
+		.kosten {
+			.statsymbol();
+			&::before {
+				content: "\f0e7";
+			}
+		}
+
+		// copy from manoever plugin
+        .statcontent
+        {
+            font-size: 7pt;
+            display: inline-flex;
+            flex-direction: row;
+            height: 1.0em;
+            vertical-align: middle;
+        }
+        
+        .statcontent img
+        {
+            height: 1.1em;
+            width: auto;
+            display: inline;
+            margin: 0;
+            position: relative;
+            top: -0.05em;
+        }
+        
+        .statcontent span
+        {
+            font-family: FontAwesome;
+            font-weight: 900;
+            -webkit-text-stroke: 0.5px #DED5BFdd; /* improve icon readbility */
+        }
+
+
+
+		#fertigkeiten {
+            position: fixed;
+            bottom: 3px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 1px;
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            justify-content: space-between;
+            width: auto;
+            height: 20px;
+            text-align: center;
+            padding-bottom: 1px;
+            background: url(../Kasten.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%; 
+            clip-path: inset(0px 0px 1px 0px);
+        }
 		.tradition {
 			// display: inline-block;
 			float: right;
