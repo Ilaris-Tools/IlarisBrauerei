@@ -434,6 +434,102 @@ body {
 		-webkit-mask: url(/assets/ilaris/game_icons/locked-fortress.svg) no-repeat 100% 100%;
 	}
 
+	.symbol.flaeche,
+	.symbol.zone {
+		-webkit-mask: url(/assets/ilaris/game_icons/area-floor-sice-icon.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.knochen,
+	.symbol.knochenkeule {
+		-webkit-mask: url(/assets/ilaris/game_icons/bone-mace.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.kralle,
+	.symbol.chimaere,
+	.symbol.materialchimaere {
+		-webkit-mask: url(/assets/ilaris/game_icons/bird-claw.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.aas,
+	.symbol.untot,
+	.symbol.materialuntot {
+		-webkit-mask: url(/assets/ilaris/game_icons/carrion.svg) no-repeat 100% 100%;
+	}
+	
+	.symbol.kessel,
+	.symbol.alchemie,
+	.symbol.schalederalchemie {
+		-webkit-mask: url(/assets/ilaris/game_icons/cauldron.svg) no-repeat 100% 100%;
+	}
+	
+	.symbol.glaskugel,
+	.symbol.kristallkugel {
+		-webkit-mask: url(/assets/ilaris/game_icons/crystal-ball.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.dolch,
+	.symbol.ritualgegenstand {
+		-webkit-mask: url(/assets/ilaris/game_icons/curvy-knive.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.djinn,
+	.symbol.elementar {
+		-webkit-mask: url(/assets/ilaris/game_icons/djinn.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.loewe {
+		-webkit-mask: url(/assets/ilaris/game_icons/lion.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.harfe,
+	.symbol.iama {
+		-webkit-mask: url(/assets/ilaris/game_icons/lyre.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.ich,
+	.symbol.selbst {
+		-webkit-mask: url(/assets/ilaris/game_icons/noun-me-4660321.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.schlange,
+	.symbol.schlangenreif {
+		-webkit-mask: url(/assets/ilaris/game_icons/ouroboros.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.gift {
+		-webkit-mask: url(/assets/ilaris/game_icons/poison-bottle.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.golem {
+		-webkit-mask: url(/assets/ilaris/game_icons/rock-golem.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.skorpion {
+		-webkit-mask: url(/assets/ilaris/game_icons/scorpion-tail.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.geist {
+		-webkit-mask: url(/assets/ilaris/game_icons/spectre.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.sack,
+	.symbol.schuppenbeutel {
+		-webkit-mask: url(/assets/ilaris/game_icons/swap-bag.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.werkzeug {
+		-webkit-mask: url(/assets/ilaris/game_icons/toolbox.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.voodoo {
+		-webkit-mask: url(/assets/ilaris/game_icons/voodoo-doll.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.stab {
+		-webkit-mask: url(/assets/ilaris/game_icons/wizard-staff.svg) no-repeat 100% 100%;
+	}
+
+
 	.symbol.gruen {
 		background-color: darkgreen;
 	}
@@ -445,6 +541,56 @@ body {
 	// .symbol.custom {
 	// 	-webkit-mask: url(var(--url)) no-repeat 100% 100%;
 	// }
+
+	// fonta-awesome-icons
+	.fa-symbol {
+		background: none;
+		mask: none;
+
+		&::before {
+			font-size: 7pt;
+			font-weight: 400;
+			font-family: "Font Awesome";
+		}
+
+	}
+	.symbol.dereweit {
+		.fa-symbol();
+		&::before{
+			content: "\f0ac";
+		}
+	}
+	.symbol.person {
+		.fa-symbol();
+		&::before{
+			content: "\f183";
+		}
+	}
+	.symbol.tier {
+		.fa-symbol();
+		&::before{
+			content: "\f1b0";
+		}
+	}
+	// person=\f183
+	// dereweit=\f0ac
+	// aventurienweit=\f0ac
+	// elixier=\f0c3
+	// bisbindunggeloest=\f127
+	// tier=\f1b0
+	// lebensjahr=\f1fd
+	// initiativephasen=\f2f9
+	// beruehrung=\f256
+	// gebundenerkristall=\f3a5
+	// teilobjekt=\f466
+	// einzelobjekt=\f468
+	// pflanze=\f4d8
+	// hexenbesen=\f51a
+	// permanent=\f534
+	// biszu =\f537
+	// vertrautentier=\f6be
+	// zauber=\f72b
+	// waehlbar=\f83e
 	.card,
 	.karte {
 		width: 2.5in;
