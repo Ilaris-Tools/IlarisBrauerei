@@ -13,11 +13,11 @@
 
 :root {
 	//Colors
-	--HB_Color_Background: #EEE5CE; // Light parchment
+	--HB_Color_Background: #FFFFFF; // Light parchment
 	--HB_Color_Accent: #e6d0b2; // Pastel green
 	--HB_Color_HeaderUnderline: #C0AD6A; // Gold
 	--HB_Color_HorizontalRule: #9C2B1B; // Maroon
-	--HB_Color_HeaderText: #58180D; // Dark Maroon
+	--HB_Color_HeaderText: #000000; // Dark Maroon
 	--HB_Color_MonsterStatBackground: #F2E5B5; // Light orange parchment
 	--HB_Color_CaptionText: #766649; // Brown
 	--HB_Color_WatercolorStain: #BBAD82; // Light brown
@@ -149,10 +149,12 @@ body {
 	width: @dina4Width;
 	height: @dina4Height;
 
+	/*
 	background-color: var(--HB_Color_Background);
 	background-image: @backgroundImage;
+	*/
 	padding: 1.7cm 1.9cm 1.7cm;
-	font-family: CrimsonProMedium;
+	font-family: 'Noto Serif';
 	font-size: 0.35cm;
 	text-rendering: optimizeLegibility;
 	page-break-before: always;
@@ -245,18 +247,24 @@ body {
 	// *           HEADERS
 	// *****************************/
 	h1 {
-		font-family: Aniron;
+		// font-family: Aniron;
 		font-weight: 800;
 		color: var(--HB_Color_HeaderText);
+		font-family: Woodstamp;
+		text-transform: uppercase;
+
+		-webkit-text-stroke: 1px black;
+		-webkit-text-fill-color: white;
 	}
 
 	h2,
 	h3,
 	h4,
 	h5 {
-		font-family: Cinzel;
+		font-family: Woodstamp;
 		font-weight: 800;
 		color: var(--HB_Color_HeaderText);
+		text-transform: uppercase;
 
 		.symbol {
 			background-color: var(--HB_Color_HeaderText);
@@ -275,7 +283,7 @@ body {
 
 		margin-bottom: 0.18cm; //Margin-bottom only because this is WIDE
 		column-span: all;
-		font-size: 0.89cm;
+		font-size: 2.4cm;
 		line-height: 1.4em;
 		-webkit-column-span: all;
 		-moz-column-span: all;
@@ -302,7 +310,7 @@ body {
 	}
 
 	h1::before {
-		content: url('/assets/ilaris/kapitel-kurz-links-40-75.png');
+		// content: url('/assets/ilaris/kapitel-kurz-links-40-75.png');
 		//top: 7px;
 		position: relative;
 		right: 10px;
@@ -313,7 +321,7 @@ body {
 	}
 
 	h1::after {
-		content: url('/assets/ilaris/kapitel-kurz-rechts-40-75.png');
+		// content: url('/assets/ilaris/kapitel-kurz-rechts-40-75.png');
 		//top: 7px;
 		position: relative;
 		left: 10px;
@@ -326,14 +334,14 @@ body {
 	h2 {
 		//margin-top    : 0px; //Font is misaligned. Shift up slightly
 		//margin-bottom : 0.05cm;
-		font-size: 0.60cm;
+		font-size: 1.60cm;
 		line-height: 0.988em; //Font is misaligned. Shift up slightly
 	}
 
 	h3 {
 		//margin-top    : -0.1cm; //Font is misaligned. Shift up slightly
 		//margin-bottom : 0.1cm;
-		font-size: 0.5cm;
+		font-size: 1.5cm;
 		border-bottom: 2px solid var(--HB_Color_HeaderUnderline);
 		line-height: 0.995em; //Font is misaligned. Shift up slightly
 
@@ -349,7 +357,7 @@ body {
 	h4 {
 		//margin-top    : -0.02cm; //Font is misaligned. Shift up slightly
 		//margin-bottom : 0.02cm;
-		font-size: 0.458cm;
+		font-size: 1.458cm;
 		line-height: 0.971em; //Font is misaligned. Shift up slightly
 
 		&+* {
@@ -477,9 +485,9 @@ body {
 
 		h5 {
 			text-align: center;
-			font-family: Cinzel;
+			font-family: Woodstamp;
 			font-weight: 650;
-
+			text-transform: uppercase;
 		}
 
 		h6 {
@@ -488,7 +496,8 @@ body {
 			left: 3mm;
 			right: 3mm;
 			text-align: center;
-			font-family: Cinzel;
+			font-family: Woodstamp;
+			text-transform: uppercase;
 		}
 
 		&.kleinertitel,
@@ -541,7 +550,8 @@ body {
 			font-weight: 800;
 
 			th {
-				font-family: Cinzel;
+				font-family: Woodstamp;
+				text-transform: uppercase;
 				vertical-align: bottom;
 				//padding        : 0.14em 0.4em;
 				padding: 0px 1.5px; // Both of these are temporary, just to force
@@ -986,7 +996,8 @@ body {
 		left: 0px;
 		width: 100%;
 		font-size: 1em;
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 		color: var(--HB_Color_HeaderText);
 		text-align: center;
 		text-indent: 0;
@@ -1436,7 +1447,8 @@ body {
 		font-weight: normal;
 		margin-top: 2.5cm;
 		margin-bottom: 0;
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 2.1cm;
 		line-height: 1.1em;
@@ -1458,7 +1470,8 @@ body {
 
 	h2 {
 		// general settings
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 		font-weight: normal;
 		font-size: 0.85cm;
 		letter-spacing: -0.2mm;
@@ -1592,7 +1605,8 @@ body {
 		//margin-bottom: .3cm;
 		font-size: 1.2cm;
 		line-height: 0.95em;
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 		text-align: center;
 		//color: #ED1C24;
 		color: var(--HB_Color_HeaderText);
@@ -1618,7 +1632,8 @@ body {
 	}
 
 	h5 {
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 	}
 
 	img {
@@ -1647,7 +1662,8 @@ body {
 	}
 
 	hr+p {
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 		text-align: center;
 		margin-top: .6cm;
 		font-weight: 800;
@@ -1667,7 +1683,8 @@ body {
 	}
 
 	td {
-		font-family: 'Cinzel';
+		font-family: 'Woodstamp';
+		text-transform: uppercase;
 		font-size: 0.43cm;
 		font-weight: 600;
 		font-variant-caps: petite-caps;
@@ -1720,14 +1737,15 @@ body {
 	}
 
 	p {
-		font-family: CrimsonProMedium;
+		font-family: 'Noto Serif';
 		line-height: 1.3em;
 		font-size: 0.5cm;
 		font-weight: 500;
 	}
 
 	hr+p {
-		font-family: Cinzel;
+		font-family: Woodstamp;
+		text-transform: uppercase;
 		text-align: center;
 		margin-top: .6cm;
 		font-weight: 800;
@@ -1806,18 +1824,20 @@ body {
 		}
 
 		h4 {
-			font-family: Cinzel;
+			font-family: Woodstamp;
+			text-transform: uppercase;
 			margin-top: 0.2cm;
 			line-height: 0.4cm;
 
 			&+ul li {
 				line-height: 1.2em;
-				font-family: CrimsonProMedium;
+				font-family: 'Noto Serif';
 			}
 		}
 
 		h3 {
-			font-family: Cinzel;
+			font-family: Woodstamp;
+			text-transform: uppercase;
 		}
 
 		ul {
@@ -1858,7 +1878,7 @@ body {
 				&:last-child {
 					display: inline-block;
 					align-self: flex-end;
-					font-family: "CrimsonProMedium";
+					font-family: 'Noto Serif';
 					font-size: 0.34cm;
 					font-weight: normal;
 					color: #000;
@@ -1955,7 +1975,7 @@ body {
 			}
 
 			th {
-				font-family: CrimsonProMedium;
+				font-family: 'Noto Serif';
 				font-size: 0.45cm;
 			}
 

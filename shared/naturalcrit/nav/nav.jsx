@@ -18,10 +18,10 @@ const Nav = {
 		}
 	}),
 	logo : function(){
-		return <a className='navLogo' href='https://ilaris-online.de/'>
+		return <a className='navLogo' href='https://document2go.dungeonslayer.de/'>
 			{/*<NaturalCritIcon />*/}
 			<span className='name'>
-				<span className='crit'>Ilaris</span>Online
+				<span className='crit'>DUNGEONSLAYERS</span>
 			</span>
 		</a>;
 	},

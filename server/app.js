@@ -68,8 +68,8 @@ const faqText           = require('fs').readFileSync('faq.md', 'utf8');
 String.prototype.replaceAll = function(s, r){return this.split(s).join(r);};
 
 const defaultMetaTags = {
-	site_name   : 'Ilaris Brauerei - Erstelle Dokumente im Ilaris-Look!',
-	title       : 'Ilaris Brauerei',
+	site_name   : 'DS Document2Go - Erstelle Dokumente im Dungeonslayers-Look!',
+	title       : 'DS Document2Go',
 	description : 'Ein Online-Editor für das Erstellen von Abenteuern und Spielhilfen.',
 	image       : `${config.get('publicUrl')}/thumbnail.png`,
 	type        : 'website'
