@@ -1,6 +1,6 @@
 ## Changelog V1
 
-Wir betreiben nur den Ilaris-Fork des eigentlich englischsprachigen, auf DnD ausgelegten [Homebrewery Projekts](https://homebrewery.naturalcrit.com). Gelegentlich holen wir uns auch einige neue Features, die dort entwickelt werden. Hier gehts zum [Changelog des Hauptprojekts](https://homebrewery.naturalcrit.com/changelog)
+Wir betreiben nur den Ilaris-Fork des eigentlich englischsprachigen, auf DnD ausgelegten [Homebrewery Projekts](https://homebrewery.naturalcrit.com). Gelegentlich holen wir uns auch einige neue Features, die dort entwickelt werden. Hier gehts zum [Changelog des Hauptprojekts](https://homebrewery.naturalcrit.com/changelog).
 ::
 
 ### V0.2
