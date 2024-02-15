@@ -26,10 +26,10 @@ const RenderWarnings = createClass({
 			if(!isChrome){
 				return <li key='chrome'>
 					<em>Built for Chrome </em> <br />
-					Andere Browser werden nicht auf die Verfügbarkeit aller Funktionen getestet.
-					Wenn du Probleme beim Exportieren als PDF oder der Darstellung deiner Gebräue 
-					feststellst, versuche es doch erst einmal mit der neusten Version von Chrome,
-					bevor du einen Fehler meldest.
+					Wir empfehlen Chrome als Browser für die Nutzung der Brauerei. 
+					Wenn du einen anderen Browser verwendest, kann es sein, 
+					dass einige Funktionen zum rendern des Gebräus fehlen. 
+					Für Firefox funktioniert zum Beispiel das Layout und der PDF-Export nicht richtig.
 				</li>;
 			}
 		},
