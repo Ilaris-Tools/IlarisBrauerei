@@ -494,7 +494,7 @@ module.exports = [
 			},
 			{
 				name: 'Doppelseite (Auto)',
-				icon: 'fac book-open',
+				icon: 'far book-inside-empty',
 				gen: function () {
 					return dedent`
 					\page
@@ -504,7 +504,7 @@ module.exports = [
 			},
 			{
 				name: 'Doppelseite Links',
-				icon: 'fac book-open',
+				icon: 'far book-inside-left',
 				gen: function () {
 					return dedent`
 					\page
@@ -514,7 +514,7 @@ module.exports = [
 			},
 			{
 				name: 'Doppelseite Rechts',
-				icon: 'fac book-open',
+				icon: 'fac book-inside-right',
 				gen: function () {
 					return dedent`
 					\page
