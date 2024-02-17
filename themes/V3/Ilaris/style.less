@@ -2,11 +2,7 @@
 @import (less) './themes/fonts/ilaris/fonts.less';
 @import (less) './themes/assets/assets.less';
 
-@footerPageNumber: url('/assets/ilaris/pagenumber-trans.png');
-@topBanner: url('/assets/ilaris/trenner.png');
-@leftBanner: url('/assets/ilaris/Seitenteil_high_res.png');
-@separator: url('/assets/ilaris/trenner.png');
-@backCover: url('/assets/ilaris/backcovermask_modified.png');
+
 
 @dina4Width: 210mm;
 @dina4Height: 297mm;
@@ -151,6 +147,7 @@ body {
 
 	background-color: var(--HB_Color_Background);
 	background-image: @backgroundImage;
+	background-size: 100% 100%;
 	padding: 1.7cm 1.9cm 1.7cm;
 	font-family: CrimsonProMedium;
 	font-size: 0.35cm;
@@ -190,7 +187,7 @@ body {
 		// margin: 0;
 		padding-left: 22px;
 		list-style: none;
-		background-image: url("/assets/ilaris/stichpunkt.png");
+		background-image: @bulletPoint;
 		background-repeat: no-repeat;
 		background-position: left 4px;
 		background-size: 10px;
@@ -546,11 +543,13 @@ body {
 	.fa-symbol {
 		background: none;
 		mask: none;
+		-webkit-mask: none;
+		width: auto;
 
 		&::before {
 			font-size: 7pt;
 			font-weight: 400;
-			font-family: "Font Awesome";
+			font-family: "FontAwesome";
 		}
 
 	}
@@ -2144,6 +2143,46 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+//*****************************
+// *      DOPPELSEITEN
+// *****************************/
+
+/* adjust page number position */
+.removeSeitenzahlDecoration {
+	filter: None;
+	text-align: left;
+	font-size: 25px;
+	width: auto;
+	bottom: 26px;
+	position: absolute;
+}
+  
+.page:has(.linkeseite),
+.page:has(.doppelseite):nth-of-type(odd) {
+	background-image: @backgroundImageLeft;
+	.seitenzahl {
+		.removeSeitenzahlDecoration();
+		left: 86px;
+	}
+}
+
+.page:has(.rechteseite),
+.page:has(.doppelseite):nth-of-type(even) {
+	background-image: @backgroundImageRight;
+	.seitenzahl {
+		.removeSeitenzahlDecoration();
+		right: 86px;
+	}
+}
+
+
+// :has(:where(.doppelseite, .rechteseite, .linkeseite)) 
+.page:has(.doppelseite):has(.seitenzahl):after,
+.page:has(.rechteseite):has(.seitenzahl):after,
+.page:has(.linkeseite):has(.seitenzahl):after{
+	background-image: None;
 }
 
 //*****************************
