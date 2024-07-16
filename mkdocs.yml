@@ -1,0 +1,8 @@
+site_name: Brauerei Docs
+nav:
+  - Home: index.md
+theme: 
+  name: material
+  font: false
+  palette:
+    scheme: ilaris
