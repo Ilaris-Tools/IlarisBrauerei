@@ -8,6 +8,7 @@ build/*
 config/local.*
 config/docker.*
 config/production.*
+package-lock.json
 
 todo.md
 startDB.bat
@@ -20,3 +21,4 @@ coverage
 Dockerfile
 docker-compose.yml
 deploy.sh
+**/fontawesome5
