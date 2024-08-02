@@ -1,7 +1,7 @@
 {
   "name": "homebrewery",
   "description": "Erstelle eigene Spielhilfen im Ilaris-Stil",
-  "version": "0.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=18.16.x"
   },
